@@ -1,0 +1,59 @@
+{
+  "name": "open-jira-ticket",
+  "version": "4.0.1",
+  "license": "MIT",
+  "bin": {
+    "open-jira-ticket": "cli.js"
+  },
+  "repository": "https://github.com/skyrex-mark/open-jira-ticket.git",
+  "scripts": {
+    "build": "babel src -d lib",
+    "start": "babel-node src/cli.js",
+    "lint": "eslint --ignore-path .gitignore --ignore-pattern node_modules . --fix",
+    "release:change": "beachball change --no-push"
+  },
+  "dependencies": {
+    "configstore": "^5.0.1",
+    "ink": "^3.0.8",
+    "meow": "^8.0.0",
+    "open": "^7.3.0",
+    "react": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "@babel/preset-react": "^7.12.10",
+    "@babel/register": "^7.12.10",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "beachball": "^1.48.0",
+    "chalk": "^4.1.0",
+    "commitlint": "^11.0.0",
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^4.3.6",
+    "ink-testing-library": "^2.1.0",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint --cache",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "post-merge": "yarn",
+      "pre-push": "yarn beachball check"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
