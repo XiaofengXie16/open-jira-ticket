@@ -1,0 +1,26 @@
+{
+  "name": "open-jira-ticket",
+  "entries": [
+    {
+      "date": "Tue, 15 Dec 2020 17:48:46 GMT",
+      "tag": "open-jira-ticket_v4.1.0",
+      "version": "4.1.0",
+      "comments": {
+        "minor": [
+          {
+            "comment": "feat: added beachball check",
+            "author": "Xiaofeng.Xie@libertymutual.com",
+            "commit": "18ea91428ccf0db66488166ee4837cee03aaf547",
+            "package": "open-jira-ticket"
+          },
+          {
+            "comment": "feat: added eslint",
+            "author": "xiaofeng02111@gmail.com",
+            "commit": "18ea91428ccf0db66488166ee4837cee03aaf547",
+            "package": "open-jira-ticket"
+          }
+        ]
+      }
+    }
+  ]
+}

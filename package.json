@@ -1,6 +1,6 @@
 {
   "name": "open-jira-ticket",
-  "version": "4.0.1",
+  "version": "4.1.0",
   "license": "MIT",
   "bin": {
     "open-jira-ticket": "cli.js"
@@ -13,9 +13,11 @@
     "lint": "eslint --ignore-path .gitignore --ignore-pattern node_modules . --fix",
     "beachball:change": "beachball change --no-push",
     "beachball:check": "beachball check",
-    "beachball:publish":"beachball publish -y"
+    "beachball:publish": "beachball publish -y"
   },
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "dependencies": {
     "configstore": "^5.0.1",
     "ink": "^3.0.8",
