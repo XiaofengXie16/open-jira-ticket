@@ -1,0 +1,7 @@
+{
+  "type": "minor",
+  "comment": "feat: added eslint",
+  "packageName": "open-jira-ticket",
+  "email": "xiaofeng02111@gmail.com",
+  "dependentChangeType": "patch"
+}

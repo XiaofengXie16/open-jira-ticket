@@ -9,9 +9,11 @@
   "scripts": {
     "build": "babel src -d lib",
     "start": "babel-node src/cli.js",
+    "test": "jest",
     "lint": "eslint --ignore-path .gitignore --ignore-pattern node_modules . --fix",
-    "release:change": "beachball change --no-push",
-    "release:check": "beachball check"
+    "beachball:change": "beachball change --no-push",
+    "beachball:check": "beachball check",
+    "beachball:publish":"beachball publish -y --no-publish"
   },
   "dependencies": {
     "configstore": "^5.0.1",
@@ -51,12 +53,7 @@
       "pre-commit": "yarn lint --cache",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "post-merge": "yarn",
-      "pre-push": "yarn release:check"
-    }
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "pre-push": "yarn beachball:check"
     }
   }
 }
