@@ -3,7 +3,7 @@
   "version": "4.1.0",
   "license": "MIT",
   "bin": {
-    "open-jira-ticket": "cli.js"
+    "open-jira-ticket": "lib/cli.js"
   },
   "repository": "https://github.com/skyrex-mark/open-jira-ticket.git",
   "scripts": {

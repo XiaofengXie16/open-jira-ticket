@@ -1,0 +1,7 @@
+{
+  "type": "minor",
+  "comment": "feat: modified entry point",
+  "packageName": "open-jira-ticket",
+  "email": "xiaofeng02111@gmail.com",
+  "dependentChangeType": "patch"
+}
