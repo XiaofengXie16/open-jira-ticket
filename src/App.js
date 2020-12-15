@@ -1,12 +1,12 @@
-import React from "react";
-import { Text } from "ink";
-import Configstore from "configstore";
-import open from "open";
-import packageJson from "../package.json";
-import BASE_URL from "./constants";
-import { setBasePath, getFullUrl } from "./utils";
+import React from 'react';
+import { Text } from 'ink';
+import Configstore from 'configstore';
+import open from 'open';
+import packageJson from '../package.json';
+import BASE_URL from './constants';
+import { setBasePath, getFullUrl } from './utils';
 
-const App = ({ basePath = "" }) => {
+const App = ({ basePath = '' }) => {
   const config = new Configstore(packageJson.name);
 
   if (basePath) {
@@ -34,12 +34,7 @@ const App = ({ basePath = "" }) => {
       </Text>
     );
   } else {
-    text = (
-      <Text>
-        No valid base path is set. Please use the --basePath option to set the
-        base url
-      </Text>
-    );
+    text = <Text>No valid base path is set. Please use the --basePath option to set the base url</Text>;
   }
   return text;
 };
