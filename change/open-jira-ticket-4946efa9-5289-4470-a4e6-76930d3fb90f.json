@@ -1,0 +1,7 @@
+{
+  "type": "minor",
+  "comment": "feat: added beachball check",
+  "packageName": "open-jira-ticket",
+  "email": "Xiaofeng.Xie@libertymutual.com",
+  "dependentChangeType": "patch"
+}
