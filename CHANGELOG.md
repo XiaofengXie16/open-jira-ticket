@@ -1,8 +1,16 @@
 # Change Log - open-jira-ticket
 
-This log was last generated on Tue, 15 Dec 2020 18:08:53 GMT and should not be manually modified.
+This log was last generated on Wed, 16 Dec 2020 00:56:46 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 4.2.1
+
+Wed, 16 Dec 2020 00:56:46 GMT
+
+### Patches
+
+- feat: modified README.md (xiaofeng02111@gmail.com)
 
 ## 4.2.0
 
