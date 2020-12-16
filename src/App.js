@@ -27,12 +27,7 @@ const App = ({ basePath = '' }) => {
   if (basePath) {
     text = <Text>Base path is set to :{baseUrl}</Text>;
   } else if (baseUrl) {
-    text = (
-      <Text>
-        Opening
-        {getFullUrl(baseUrl)}
-      </Text>
-    );
+    text = <Text>Opening {getFullUrl(baseUrl)}</Text>;
   } else {
     text = <Text>No valid base path is set. Please use the --basePath option to set the base url</Text>;
   }

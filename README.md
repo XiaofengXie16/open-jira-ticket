@@ -12,8 +12,8 @@ open-jira-ticket config --basePath=your_own_url
 
 ```
 
-2 Run the command below in your terminal to open the JIRA ticket in your browser.
-(This tool will open the ticket based on the current branch name)
+2 Run the command below in your terminal to open the JIRA ticket in your browser.(Make sure you are in a git directory)
+(This tool will open the ticket in your browser based on the current ticket number in the branch name)
 
 ```
 open-jira-ticket
